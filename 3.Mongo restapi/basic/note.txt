@@ -1,0 +1,7 @@
+1 : require pakagges download (npm init, npm i express mongoose)
+2 : make coonection file for connect to the database (it's depend on you can used mongodb compass local or atlas)
+3 : make server file for used to fetch data from databse and also open in live server show data
+4 : make a model in this file create model as per reuirement 
+5 : make route file in this file we can write all crud 
+6 : check tha data in mongo compass/atlas using postman through crud perform
+7 : now your api done.
