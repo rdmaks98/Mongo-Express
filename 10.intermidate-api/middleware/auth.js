@@ -1,13 +1,13 @@
 import CustomErrorHandler from "../services/CustomErrorHandler";
 import JwtService from "../services/JwtService";
 const auth = async (req, res, next) => {
-  let authHeader = req.headers.Authorization;
-  console.log(authHeader);
+  let authHeader = req.headers.authorization;
+  // console.log(authHeader);
   if (!authHeader) {
     return next(CustomErrorHandler.unAuthorize());
   }
   const token = authHeader.split(" ")[1];
-  console.log(token);
+  // console.log(token);
   try {
     const { _id, role } = await JwtService.verify(token);
     const user = {
